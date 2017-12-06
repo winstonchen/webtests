@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    </head>
+<body>
+	<div id="blur"></div>
+	<div id="focus"></div>
+</body>
+<script>
+	let blurEl = document.getElementById("blur");
+	let focusEl = document.getElementById("focus");
+/*	document.addEventListener("focus", (e) => {
+		focusEl.innerHTML += "document - focus, document has focus? " + document.hasFocus() + ", ";
+		console.log("================blablabla - document - focus  document has focus? " + document.hasFocus() + "==================");	
+	}, false);
+	window.addEventListener("focus", (e) => {
+		focusEl.innerHTML += "window - focus, document has focus? " + document.hasFocus() + ", ";
+		console.log("================blablabla - window - focus  document has focus? " + document.hasFocus() + "==================");	
+	}, false);
+	document.addEventListener("blur", (e) => {
+		blurEl.innerHTML += "document - blur,document has focus? " + document.hasFocus() + ", ";
+		console.log("================blablabla - document - blur document has focus? " + document.hasFocus() + "==================");	
+	}, false);	
+	window.addEventListener("blur", (e) => {
+		blurEl.innerHTML += "window - blur, document has focus? " + document.hasFocus() + ", ";
+		console.log("================blablabla - window - blur document has focus? " + document.hasFocus() + "==================");	
+	}, false);	
+*/
+	setInterval( function() {
+		focusEl.innerHTML += ("document has focus? " + document.hasFocus() + ", ");
+		console.log("document has focus? " + document.hasFocus());
+	}
+	, 1000);	
+</script>
+</html>
