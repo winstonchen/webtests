@@ -9,17 +9,15 @@
 
     </head>
 <body>
-	WebVR
+		<iframe src="https://webvr.info/samples/03-vr-presentation.html"></iframe>
 </body>
-<script>
-	if (navigator.getVRDisplays) {
-		console.log("webvr enabled");
-		navigator.getVRDisplays().then( displays => { 
-			console.log("vrdisplay length: " + (displays.length).toString() );
-		});
-
-	} else {
-		console.log("webvr not enabled");
+<style>
+	html, body, iframe {
+		margin: 0;
+		width:100%;
+		height:100%;
 	}
+</style>
+<script>
 </script>
 </html>
